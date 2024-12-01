@@ -1,14 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="theme-color" content="#000000" />
-    <title>FTC Dashboard</title>
-  </head>
+<html>
   <body>
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-    <script type="module" src="/src/index.jsx"></script>
+    <textarea id="username"></textarea>
+    <br>
+    <textarea id="password"></textarea>
+    <br>
+    <button onclick="window.location.replace(window.location.origin + '/dash/run.html?username=' + document.getElementById('username').value + '&password=' + document.getElementById('password').value)">Login</button>
   </body>
 </html>
